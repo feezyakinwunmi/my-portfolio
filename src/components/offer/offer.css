@@ -1,0 +1,47 @@
+.img img{
+width: 300px;
+}
+.word{
+    margin-right: 20px;
+}
+.word h3{
+    color: #ffe5b4;
+    font-size: 25px;
+
+    
+}
+.cont{
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    margin-right: 90px;
+}
+.cont p{
+    color: #ffe5b4;
+margin-top: -10px;  
+font-size: 20px;  
+}
+.bigoffercon h3{
+    color: #ffe5b4;
+font-size: 30px;
+margin-top: 40px;
+}
+.word p{
+    color: white;
+    width: 400px;
+    font-size: 13px;
+    margin-top: 20px;
+}
+.offerd{
+    display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.offerd:nth-child(2){
+    flex-direction: row-reverse;
+    margin-top: 40px;
+}
+.offerd:nth-child(2) .word{
+    margin-left: 40px;
+
+}

@@ -1,0 +1,34 @@
+.coment img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-top: -20px;
+}
+.comentbox h3{
+    color: #ffe5b4;
+    font-size: 30px;
+}
+
+.coment h3{
+    color: #ffe5b4;
+    font-size: 16px;
+    border-bottom: 2px solid white;
+
+}
+.coment p{
+    color: white;
+    font-size: 11px;
+}
+.coment h4{
+    color: #ffe5b4;
+    font-size: 9px;
+}
+.coment{
+    width: 500px;
+    background-color: rgb(17, 17, 17);
+    padding: 5px;
+    border-radius: 8px;
+    margin-top: 30px;
+    height: auto;
+}
+

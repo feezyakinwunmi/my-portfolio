@@ -1,38 +1,553 @@
-.App {
-  text-align: center;
-}
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;700&display=swap");
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+* {
+  margin: 0px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar {
+  display: flex;
+  background-color:  black;
+  margin-bottom: 0px;
+  height: 30px;
+  flex-basis: 23%;
+  position: sticky;
+align-self: flex-start;
+top: 0%;
+  justify-content: space-between;
+  padding-left: 800px;
+}
+.navbar a {
+  color: #ffe5b4;
+  text-decoration: none;
+  margin-top: 10px;
+margin-right: 5%;
+  font-size: 8px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.homebigcont {
+  display: flex;
+  margin-top: 0px;
+  padding-top: -10px;
+  background-color:black;
+}
+.homebigcont .leftcont {
+  height: 640px;
+  width: 25%;
+  padding: 10px;
+  position: sticky;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-self: flex-start;
+  background-color: black;
+  flex-basis: 23%;
+  position: sticky;
+align-self: flex-start;
+top: 4%;
+
+}
+.homebigcont .leftcont .skillcirc {
+  margin-top: 100px;
+  background-color: white;
+}
+.profile {
+  display: flex;
+}
+.profile .user {
+  width: 60px;
+  height: 70px;
+  border-radius: 50%;
+  border: 2px solid black;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  margin-right: 15px;
+}
+.profile .userdt {
+  margin-top: 10px;
+}
+.profile .userdt h2 {
+  color: white;
+  font-size: 11px;
+}
+.profile .userdt h1 {
+  color: #ffe5b4;
+  font-size: 25px;
+}
+.profile .userdt p {
+  color: #ffe5b4;
+  font-size: 10px;
+}
+.midcont {
+  width: 100%;
+  display:flex;
+  margin-top: 30px;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 40px;
+}
+.cskill{
+  width: 40%;
+  height: 30px;
+  position: relative;
+}
+.cskill p{
+  color: white;
+  margin-left: 15px;
+  font-size: 10px;
+  margin-top: 50px;
+}
+.cskill svg{
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%, -50%)rotate(-90deg);
+  width: 60px;
+  
+}
+.progresscircle{
+  stroke-width: 10;
+  stroke: black;
+  fill:transparent;
+  stroke-dasharray: 502;
+  stroke-dashoffset: 502;
+  stroke-linecap: round;
+  animation: animate-bar 1s linear forwards;
+}
+
+@keyframes animate-bar{
+  100%{
+    stroke-dashoffset: -1;
+  }
+}
+.progresscirclepath{
+  stroke-width: 10;
+  stroke: #ffe5b4;
+  fill:transparent;
+  stroke-dasharray: 502;
+  stroke-dashoffset: 502;
+  stroke-linecap: round;
+}
+.path1{
+animation: animate-path1 1s 1s linear forwards;
+}
+.path2{
+  animation: animate-path2 1s 1s linear forwards;
+  }
+  .path3{
+    animation: animate-path3 1s 1s linear forwards;
+    }
+    .path4{
+      animation: animate-path4 1s 1s linear forwards;
+      }
+      @keyframes animate-path1{
+        100%{
+          stroke-dashoffset: 20;
+        }
+      }
+      @keyframes animate-path2{
+        100%{
+          stroke-dashoffset: 20;
+        }
+      }
+      @keyframes animate-path3{
+        100%{
+          stroke-dashoffset:20;
+        }
+      }
+      @keyframes animate-path4{
+        100%{
+          stroke-dashoffset: 20;
+        }
+      }
+
+.skillcont {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin-top: 10px;
+}
+box-icon logo {
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.skill1 {
+  margin: 2px 0;
+}
+.skill1:first-child{
+  margin-top: 10px;
+}
+.skill1 .info {
+  margin-bottom: 10px;
+  display: flex;
+}
+.skill1 .info p {
+  color: white;
+  font-size: 10px;
+}
+.skill1 .info span {
+  font-size: 10px;
+  color: #ffe5b4;
+  font-weight: 700;
+  width: 100%;
+  margin-top: 10px;
+  animation: showText 0.5s 1s linear forwards;
+  opacity: 10;
+  display: flex;
+  justify-content: space-between;
+}
+.skill1 .progresslinehtml,
+.skill1 .progresslinecss,
+.skill1 .progresslinejs,
+.skill1 .progresslinets,
+.skill1 .progresslinenode,
+.skill1 .progresslinenest,
+.skill1 .progresslinefigma,
+.skill1 .progresslinereact,
+.skill1 .progresslinenst,
+.skill1 .progresslinegit,
+.skill1 .progresslinemongo,
+.skill1 .progresslinewix {
+  position: relative;
+  border-radius: 10px;
+  width: 100%;
+  height: 3px;
+  background-color: rgb(31, 30, 30);
+  /* animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
+  transform:scaleX(0);
+  transform-origin:left; */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.skill1 .progresslinehtml span {
+  height: 100%;
+  background-color:#ffe5b4;
+  position: absolute;
+  border-radius: 10px;
+  animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+  transform: scaleX(0);
+  transform-origin: left;
+  width: 94%;
+  top: -2px;
+  left: -2px;
+}
+.skill1 .progresslinecss span {
+  height: 100%;
+  background-color: #ffe5b4;
+  position: absolute;
+  border-radius: 10px;
+  animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+  transform: scaleX(0);
+  transform-origin: left;
+  width: 90%;
+  top: -2px;
+  left: -2px;
+}
+.skill1 .progresslinejs span {
+  height: 100%;
+  background-color: #ffe5b4;
+  position: absolute;
+  border-radius: 10px;
+  animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+  transform: scaleX(0);
+  transform-origin: left;
+  width: 80%;
+  top: -2px;
+  left: -2px;
+}
+.skill1 .progresslinenode span {
+  height: 100%;
+  background-color: #ffe5b4;
+  position: absolute;
+  border-radius: 10px;
+  animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+  transform: scaleX(0);
+  transform-origin: left;
+  width: 70%;
+  top: -2px;
+  left: -2px;
+}
+.skill1 .progresslinereact span {
+  height: 100%;
+  background-color: #ffe5b4;
+  position: absolute;
+  border-radius: 10px;
+  animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+  transform: scaleX(0);
+  transform-origin: left;
+  width: 70%;
+  top: -2px;
+  left: -2px;
+}
+.skill1 .progresslinets span {
+  height: 100%;
+  background-color: #ffe5b4;
+  position: absolute;
+  border-radius: 10px;
+  animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+  transform: scaleX(0);
+  transform-origin: left;
+  width: 70%;
+  top: -2px;
+  left: -2px;
+}
+.skill1 .progresslinemongo span {
+  height: 100%;
+  background-color: #ffe5b4;
+  position: absolute;
+  border-radius: 10px;
+  animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+  transform: scaleX(0);
+  transform-origin: left;
+  width: 80%;
+  top: -2px;
+  left: -2px;
+}
+.skill1 .progresslinegit span {
+  height: 100%;
+  background-color: #ffe5b4;
+  position: absolute;
+  border-radius: 10px;
+  animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+  transform: scaleX(0);
+  transform-origin: left;
+  width: 80%;
+  top: -2px;
+  left: -2px;
+}
+.skill1 .progresslinefigma span {
+  height: 100%;
+  background-color: #ffe5b4;
+  position: absolute;
+  border-radius: 10px;
+  animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+  transform: scaleX(0);
+  transform-origin: left;
+  width: 80%;
+  top: -2px;
+  left: -2px;
+}
+.skill1 .progresslinewix span {
+  height: 100%;
+  background-color: #ffe5b4;
+  position: absolute;
+  border-radius: 10px;
+  animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+  transform: scaleX(0);
+  transform-origin: left;
+  width: 90%;
+  top: -2px;
+  left: -2px;
+}
+.skill1 .progresslinenst span {
+  height: 100%;
+  background-color: #ffe5b4;
+  position: absolute;
+  border-radius: 10px;
+  animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+  transform: scaleX(0);
+  transform-origin: left;
+  width: 80%;
+  top: -2px;
+  left: -2px;
+}
+
+.skill1 .progresslinecss p {
+  align-items: end;
+}
+@keyframes animate {
+  100% {
+    transform: scaleX(1);
   }
-  to {
-    transform: rotate(360deg);
+}
+
+.outer {
+  height: 60px;
+  width: 60px;
+  /* box-shadow: 6px 6px 10px -1px black, -4px -4px 5px -1px white; */
+  padding: 10px;
+  border-radius: 50%;
+}
+.inner {
+  height: 50px;
+  width: 50px;
+  display: flex;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  /* box-shadow: inset 4px 4px 6px -1px black, inset -4px -4px 6px -1px white; */
+}
+
+#number {
+  font-weight: 600;
+  color: #ffe5b4;
+  font-size: 30px;
+}
+
+/* @keyframes anim{
+  100%{
+    stroke-dashoffset: 157.5;
   }
+} */
+
+svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+}
+.homebigcont .rightcont {
+  width: 100%;
+  height: auto;
+margin: 10px;
+  background-color: transparent;
+}
+.homebigcont .rightcont .banner {
+  width: auto;
+  height: 350px;
+  border: 2px solid black;
+  background-color: white;
+  margin-right: 10px;
+}
+.myservice {
+  margin-top: 10px;
+border-top: 2px solid white;
+  display: flex;
+  justify-content: space-between;
+  background-color: transparent;
+  
+}
+.myserv {
+  margin-top: 10px;
+
+  width: 260px;
+  height: 70px;
+  align-items: center;
+  padding-top: 20px;
+  padding-left: 20px;
+  border-radius: 10px;
+  box-shadow: 2px 1px 2px 1.5px rgb(88, 87, 87);
+  background-color: black;
+}
+.myserv h3 {
+  color: white;
+
+}
+.myserv h4 {
+  margin-right: 15px;
+  text-align: right;
+}
+.myserv h4 a {
+  color: white;
+  text-decoration: none;
+}
+.myserv p a {
+  color: #fae4bf;
+  text-decoration: none;
+}
+.workdetails {
+  margin-top: 30px;
+
+
+  display: flex;
+  justify-content: space-between;
+  background-color: transparent;
+}
+.workd {
+  display: flex;
+  background-color: transparent;
+  align-items: center;
+  padding-right: 10px;
+
+}
+.workd h3 {
+  background-color: transparent;
+  color: white;
+  font-size: 25px;
+}
+.workd p {
+  background-color: transparent;
+  color: #ffe5b4;
+  font-size: 12px;
+}
+.svg{
+  background-color: transparent;
+  background-image: url(
+
+  );
+}
+.yearsbox{
+    margin-left: 30px;
+
+}
+.yearsbox h1{
+    color: #ffe5b4;
+
+  font-size: 45px;
+  font-weight: 2000;
+  margin-top: 20px;
+
+}
+.yearsbox p {
+color: #fcecd0;
+font-weight: 1000;
+margin-top: -6px;
+margin-left: 20px;
+}
+.experiencebox{
+  display: flex;  
+  margin-top: 80px;
+  width: 700px;
+  margin-left: 5%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row-reverse;
+
+}
+.expd{
+  width: 160px;
+  height: 210px;
+  padding: 5px;
+  margin-right: 15px;
+  background-image: linear-gradient(180deg, rgb(82, 81, 81), rgb(36, 35, 35),black);}
+
+.expd:last-child{
+  margin-top: -100px;
+}
+.expd:nth-child(2){
+  margin-top: -100px;
+
+}
+  .expd h3 {
+  font-size: 14px;
+  color: black;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
+}
+.expd h2{
+  color: #ffe5b4;
+  margin-top: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
+}
+.expd p{
+  color: white;
+  margin-top: 5px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 10px;
+}
+.mid{
+  display: flex;
+  justify-content: space-between;
+}
+.vid{
+  width: 200px;
+  height: auto;
+  overflow: hidden;
+  
+}
+.vid video{
+  width: 500px;
+  margin-left: -185px;
+  flex-basis: 23%;
+  position: sticky;
+align-self: flex-start;
+top: 0%;
 }

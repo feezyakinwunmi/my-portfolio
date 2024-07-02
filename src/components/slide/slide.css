@@ -1,0 +1,44 @@
+.container-style{
+    height: 400px;
+}
+.description{
+    width: 900px;
+    position: absolute;
+    z-index: 999;
+    color: white;
+    top: 20%;
+    left: 24%;
+    background-color: transparent;
+    
+}
+.description  h1{
+    font-size: 50px;
+    animation: LeftToRight 0.4s linear ;
+}
+
+@keyframes LeftToRight {
+    0% {
+      transform: translateX(-50%);
+    }
+    100% {
+      transform: translateX(2%);
+    }
+  }
+.description  h2{
+font-size: 30px;}
+
+.carousel-boullt{
+    display: flex;
+align-items: start;
+justify-content: start;
+}
+.carousel-boullt span{
+    width: 30px;
+    height: 5px;
+    margin-top: 40px;
+    background-color: rgb(75, 75, 73);
+    margin-left: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 3px 2px 2px black;
+}
